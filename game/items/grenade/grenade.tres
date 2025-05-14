@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="HandItem" load_steps=5 format=3 uid="uid://co1txj2dn5cyi"]
+
+[ext_resource type="Script" uid="uid://b61bvdedb0a41" path="res://game/items/hand_item.gd" id="1_7j8h7"]
+[ext_resource type="PackedScene" uid="uid://53373xw8w422" path="res://game/items/grenade/grenade.tscn" id="1_ewyn1"]
+[ext_resource type="Texture2D" uid="uid://bugr74ddrapa6" path="res://game/items/grenade/grenade.png" id="3_843g5"]
+[ext_resource type="Script" uid="uid://djxhjrah2hbdb" path="res://game/tags/tag.gd" id="3_v8qus"]
+
+[resource]
+script = ExtResource("1_7j8h7")
+type = 4
+tier = 0
+scene = ExtResource("1_ewyn1")
+material = 0
+mining_animation = ""
+primary_action_animation = "throw"
+secondary_action_animation = ""
+charge_primary_action = true
+charge_secondary_action = false
+texture = ExtResource("3_843g5")
+can_stack = true
+tags = Array[ExtResource("3_v8qus")]([])
+fuel_value = 0.0
+name = "grenade"

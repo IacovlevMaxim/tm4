@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Block" load_steps=5 format=3 uid="uid://bv3qfie2av8dh"]
+
+[ext_resource type="Resource" uid="uid://jkfdi3kaaiof" path="res://game/items/stone/stone.tres" id="1_4h8do"]
+[ext_resource type="Script" uid="uid://baq4faxdy8mvd" path="res://game/blocks/block.gd" id="2_owwp6"]
+[ext_resource type="Texture2D" uid="uid://dc3wjicuyfidk" path="res://game/blocks/stone block/stone.png" id="3_b4p7d"]
+[ext_resource type="Script" uid="uid://djxhjrah2hbdb" path="res://game/tags/tag.gd" id="3_gggwq"]
+
+[resource]
+script = ExtResource("2_owwp6")
+texture = ExtResource("3_b4p7d")
+drop = ExtResource("1_4h8do")
+hardness = 0.5
+has_collision = true
+tags = Array[ExtResource("3_gggwq")]([])
+particle_color = Color(0.360784, 0.360784, 0.360784, 1)
+material = 0
+mining_tool = 1
+other_tool_penalty = 4.0
+other_tool_produces_drops = false
+schedule_tick = false
+is_air = false
+is_fluid = false
+custom_collision_polygon = PackedVector2Array()
+name = "stone"

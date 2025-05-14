@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://bhhsycxt24sle"]
+
+[ext_resource type="Script" uid="uid://cu3bw7woiecbj" path="res://game/items/item.gd" id="1_gj8tw"]
+[ext_resource type="Texture2D" uid="uid://bofjnrwggp6bs" path="res://game/items/iron ingot/iron_ingot.png" id="2_3is5q"]
+[ext_resource type="Script" uid="uid://djxhjrah2hbdb" path="res://game/tags/tag.gd" id="2_lyhdh"]
+
+[resource]
+script = ExtResource("1_gj8tw")
+texture = ExtResource("2_3is5q")
+can_stack = true
+tags = Array[ExtResource("2_lyhdh")]([])
+fuel_value = 0.0
+name = "iron_ingot"
