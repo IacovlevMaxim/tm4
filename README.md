@@ -1,97 +1,49 @@
-<p align="left">
-<a href="https://github.com/Griiimon/2D-Mining/tree/stable">
-	<img src="https://img.shields.io/badge/stable_version-0.4.1-blue" alt="stable version"></a>
+# Game Design Document (GDD)
 
-<a href="https://github.com/Griiimon/2D-Mining/graphs/contributors" alt="Contributors">
-		<img src="https://img.shields.io/github/contributors/Griiimon/2D-Mining" /></a>
+## 1. Storyline
 
-<a href="https://github.com/Griiimon/2D-Mining/pulse" alt="Activity">
-		<img src="https://img.shields.io/github/commit-activity/m/Griiimon/2D-Mining" /></a>
-</p>
+In a freezing 2D side-view world, the protagonist's family is on the brink of death due to the lack of heat. The only solution: build a furnace. With a pickaxe in one hand and a sword in the other, the player sets out. However, ghostly creatures roam the surface, pushing the player to dig underground in search of coal, iron, and a rare mineral required to construct a working furnace. The deeper you go, the more dangerous the caves become — deadly falls and hostile lifeforms await.
 
+## 2. Game Physics
 
+- 2D side-scrolling with gravity.
+- Falling from great heights causes death.
+- Lava exists only deep underground.
+- Block-based terrain: breakable and placeable blocks.
+- Player can jump, climb using stairs, and build custom paths.
 
-2D Mining Sandbox ( Godot Community Project )
-=============
+## 3. Interaction Mechanisms
 
+- **Movement**: WASD keys.
+- **Item selection**: Number keys 1–9.
+- **Mining / Attacking / Placing**: Left click.
+- **Cancel selection**: Right click.
+- **Crafting**:
+  - Press `Tab` for basic crafting.
+  - Press `B` for advanced crafting menu.
+- **Inventory system**: Items collected and crafted are stored in a bottom-bar.
 
-![Logo](media/banner.png)
+## 4. AI Functionality
 
- * [About](#about)
- * [How To Contribute](#contribute)
- * [Controls](#controls)
- * [TODO](#todo)
+- **Ghosts**: Roam the surface, actively chase the player, pass through terrain.
+- **Bat**: Harmless in behavior but contact causes damage and can kill.
+- **AI behavior**: Advanced pathing and player detection, with aggressive or passive roles.
 
+## 5. Resource and Crafting System
 
+- **Basic Resources**:
+  - **Coal**: Used for smelting and furnace construction.
+  - **Iron**: Used for crafting tools and upgrades.
+  - **Stone**: Used for building blocks and basic items.
+- **Rare Mineral**: Required to complete the furnace and unlock deeper progression.
+- **Craftable Items**:
+  - **Stone Block**: Can be placed to build structures.
+  - **Stairs**: Used for easier climbing and safer cave navigation.
+  - **Furnace**: Essential structure to save the family.
+- **Crafting Types**:
+  - Basic crafting (`B`): Simple items.
+  - Advanced crafting (`Tab`): Unlocks more complex recipes.
 
-About
-------
+---
 
-
-A Godot Community Project where everyone is welcome to contribute. Add content or new features to this solid and flexible game framework. No long term commitment or coding skills required. You can do as little as making a change to a single texture or block property and be on your way.
-
-Learn how to participate in a team project in a safe and judgement free zone. Beginners are especially encouraged to get their feet wet and make their first contribution to a larger code base. This is meant to be a learning environment above all.
-
-You can also contribute by reporting a bug or making a feature request by opening an [Issue](https://github.com/Griiimon/2D-Mining-Sandbox/issues).
-
-Please feel free to ask me anyting or leave feedback in the [Discussions Section](https://github.com/Griiimon/2D-Mining-Sandbox/discussions)!
-
-
-Contribute
-------
-
-
-### Full YouTube Video Tutorial
-
-[![Video Tutorial](https://img.youtube.com/vi/MnEOfBNNM4c/0.jpg)](https://www.youtube.com/watch?v=MnEOfBNNM4c)
-
-
-### Steps
-
-1. Create a GitHub Account
-2. *Fork* the 'latest' *Branch* of this code repository
-3. Create a new *Branch* in your forked repository for each feature you intend to add or bug you want to fix
-4. Use the GitHub Desktop App or the *git* command line tool to clone your repository to your local machine
-5. Switch to your newly created *Branch*
-6. Open *Godot* and make your additions/changes
-7. Commit your changes to your *Branch*
-8. Push your *Commits* to your online GitHub repository
-9. Create a *Pull Request* 
-
-Controls:
-------
-
-
-| Action                        | Key(s)               |
-|---------                      | -------------        |
-|Move|W/A/S/D|
-|Jump|Space|
-|Use Weapon/Tool|Left Mouse Button|
-|Secondary Hand Action|Right Mouse Button|
-|Next/Prev Hotbar item|Mouse Wheel or Q/E|
-|Drop item|X|
-|Interact|F|
-|Toggle Inventory|Tab|
-|Toggle Build Menu|B / Middle Mouse Button|
-|Rotate Block|F|
-|Toggle free camera|K|
-|Admin panel|F9|
-
-Cheats ( if enabled ):
-
- 
-| Cheat                        | Key              |
-|---------                      | -------------        |
-|Toggle fly|F1|
-
-
-
-TODO
-------
-
-
-- [ ] Overworld terrain
-- [ ] Overhaul UI
-- [ ] Threaded terrain generation
-- [ ] Physics smoothing
-- [ ] Put block textures into single atlas texture
+**Note**: The game balances survival and crafting with light exploration and danger. Smart resource gathering and strategic crafting are key to progressing through the cold, haunted world.
