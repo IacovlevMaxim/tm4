@@ -396,12 +396,12 @@ shape = SubResource("CapsuleShape2D_cwxew")
 
 [node name="AnimationPlayer Hand" type="AnimationPlayer" parent="." index="6"]
 libraries = {
-"": SubResource("AnimationLibrary_qvefq")
+&"": SubResource("AnimationLibrary_qvefq")
 }
 
 [node name="AnimationPlayer Feet" type="AnimationPlayer" parent="." index="7"]
 libraries = {
-"": SubResource("AnimationLibrary_ve3ko")
+&"": SubResource("AnimationLibrary_ve3ko")
 }
 
 [node name="Debug Component" parent="." index="8"]
